@@ -1,4 +1,4 @@
--- CREATE SCHEMA fantasy_library_database;
+CREATE SCHEMA series;
 
 CREATE TABLE  series (
 id INTEGER PRIMARY KEY,
