@@ -1,4 +1,4 @@
-CREATE SCHEMA series;
+-- CREATE SCHEMA fantasy_library_database;
 
 CREATE TABLE  series (
 id INTEGER PRIMARY KEY,
@@ -20,12 +20,12 @@ name TEXT
 CREATE TABLE  books (
 id INTEGER PRIMARY KEY,
 title TEXT,
-year INTEGER
+year INTEGER,
 series_id INTEGER
 );
 
 CREATE TABLE  characters (
-id INTEGER PRIMARY KEY
+id INTEGER PRIMARY KEY,
 name TEXT,
 motto TEXT,
 species TEXT,
@@ -33,6 +33,7 @@ author_id INTEGER
 );
 
 CREATE TABLE character_books(
-book_id INTEGER
+id INTEGER PRIMARY KEY,
+book_id INTEGER,
 character_id INTEGER
 );
